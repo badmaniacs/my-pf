@@ -16,6 +16,7 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons';
 import { NextRouter } from 'next/router';
 import Logo from './logo';
+import ThemeToggleButton from './theme-toggle-button';
 
 interface LinkItemProps {
   children: React.ReactNode;
@@ -78,6 +79,9 @@ const Navbar: React.FC<NavbarProps> = (props) => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
+          <LinkItem href="/about" path={path}>
+            About
+          </LinkItem>
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
@@ -86,6 +90,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
           </LinkItem>
         </Stack>
         <Box flex={1} alignItems="right">
+          <ThemeToggleButton/>
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="nav-menu">
               <MenuButton

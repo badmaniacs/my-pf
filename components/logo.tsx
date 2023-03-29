@@ -20,19 +20,19 @@ const Logo = () => {
   const thinkingImg = `/images/thinking.png`;
   return (
     <Link href="/">
-        <LogoBox>
-          <Image src={thinkingImg} width={20} height={20} alt="logo" />
-          <Text
-            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-            fontFamily="M PLUS Rounded 1c"
-            fontWeight="bold"
-            ml={3}
-          >
-            Park Kyungtae
-          </Text>
-        </LogoBox>
+      <LogoBox>
+        <Image src={thinkingImg} width={20} height={20} alt="logo" />
+        <Text
+          color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+          fontFamily="M PLUS Rounded 1c"
+          fontWeight="bold"
+          ml={3}
+        >
+          Park Kyungtae
+        </Text>
+      </LogoBox>
     </Link>
   );
 };
 
-export default Logo
+export default Logo;
