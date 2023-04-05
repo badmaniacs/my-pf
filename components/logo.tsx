@@ -24,11 +24,11 @@ const Logo = () => {
         <Image src={thinkingImg} width={20} height={20} alt="logo" />
         <Text
           color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-          fontFamily="M PLUS Rounded 1c"
+          fontFamily="Open Sans"
           fontWeight="bold"
           ml={3}
         >
-          Park Kyungtae
+          Kyungtae&#39;s Home
         </Text>
       </LogoBox>
     </Link>
