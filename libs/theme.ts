@@ -36,7 +36,6 @@ const fonts = {
   heading: "'Open Sans'",
 };
 
-
 const config = {
   initialColorMode: 'dark',
   useSystemColorMode: true,

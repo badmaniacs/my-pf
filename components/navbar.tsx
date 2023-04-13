@@ -32,8 +32,8 @@ const LinkItem: React.FC<LinkItemProps> = ({ href, path, children }) => {
     <Link
       as={NextLink}
       p={2}
-      bg={active ? '#333335' : undefined}
-      color={active ? '#333335' : inactiveColor}
+      bg={active ? 'orange' : undefined}
+      color={active ? 'black' : inactiveColor}
       href={href} // navbar active color
     >
       {children}
@@ -86,7 +86,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
             Visitors
           </LinkItem>
         </Stack>
-        <Box display='flex' flex={1} justifyContent='right'>
+        <Box display="flex" flex={1} justifyContent="right">
           <ThemeToggleButton />
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="nav-menu">
@@ -96,7 +96,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
                 variant="outline"
                 aria-label="Options"
               />
-              <MenuList >
+              <MenuList>
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
