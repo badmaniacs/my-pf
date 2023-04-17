@@ -1,23 +1,22 @@
 import NextLink from 'next/link';
 import Image, { StaticImageData } from 'next/image';
-import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react';
+import { Box, Text, LinkBox, LinkOverlay, AspectRatio } from '@chakra-ui/react';
 import { Global } from '@emotion/react';
+import { PropsWithChildren } from 'react';
 
 interface GridItemProps {
-  children: React.ReactNode;
   href: string;
   title: string;
   thumbnail: StaticImageData;
 }
 
 interface WorkGridItemProps {
-  children: React.ReactNode;
   id: string;
   title: string;
   thumbnail: StaticImageData;
 }
 
-export const GridItem: React.FC<GridItemProps> = ({
+export const GridItem: React.FC<PropsWithChildren<GridItemProps>> = ({
   children,
   href,
   title,
@@ -42,7 +41,7 @@ export const GridItem: React.FC<GridItemProps> = ({
   );
 };
 
-export const WorkGridItem: React.FC<WorkGridItemProps> = ({
+export const WorkGridItem: React.FC<PropsWithChildren<WorkGridItemProps>> = ({
   children,
   id,
   title,
@@ -51,7 +50,9 @@ export const WorkGridItem: React.FC<WorkGridItemProps> = ({
   return (
     <Box w="100%" justifyItems="center">
       <LinkBox cursor="pointer" as={NextLink} href={`/works/${id}`}>
-        <Image src={thumbnail} alt={title} className="grid-item-thumbnail" />
+        <AspectRatio ratio={16 / 9}>
+          <Image src={thumbnail} alt={title} className="grid-item-thumbnail" />
+        </AspectRatio>
         <LinkOverlay href={`/works/${id}`} as="div">
           <Text mt={2} fontSize={20}>
             {title}
@@ -64,11 +65,13 @@ export const WorkGridItem: React.FC<WorkGridItemProps> = ({
 };
 
 export const GridItemStyle = () => {
-  <Global
-    styles={`
+  return (
+    <Global
+      styles={`
       .grid-item-thumbnail {
         border-radius: 12px;
       }
     `}
-  />;
+    />
+  );
 };

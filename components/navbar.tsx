@@ -1,4 +1,5 @@
 import NextLink from 'next/link';
+
 import {
   Container,
   Box,
@@ -13,18 +14,18 @@ import {
   IconButton,
   useColorModeValue,
 } from '@chakra-ui/react';
+import { PropsWithChildren } from 'react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import { NextRouter } from 'next/router';
 import Logo from './logo';
 import ThemeToggleButton from './theme-toggle-button';
 
 interface LinkItemProps {
-  children: React.ReactNode;
   href: string;
   path: string;
 }
 
-const LinkItem: React.FC<LinkItemProps> = ({ href, path, children }) => {
+const LinkItem: React.FC<PropsWithChildren<LinkItemProps>> = ({ href, path, children }) => {
   const active = path === href;
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900');
 

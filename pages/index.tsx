@@ -77,7 +77,7 @@ const Home = () => {
         </BioSection>
         <BioSection>
           <BioYear>2023.01</BioYear>
-          원티드 프리온보딩 프론트엔드 과정 수료
+          원티드 프리온보딩 프론트엔드 인턴십 과정 수료
         </BioSection>
         <BioSection>
           <BioYear>2023.02</BioYear>
