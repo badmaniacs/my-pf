@@ -3,5 +3,5 @@ export interface IComment {
   password: string;
   text: string;
   writedate: string;
-  id? : string
+  id?: string;
 }

@@ -17,6 +17,7 @@ import {
 import { PropsWithChildren } from 'react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import { NextRouter } from 'next/router';
+import { IoLogoGithub } from 'react-icons/io5';
 import Logo from './logo';
 import ThemeToggleButton from './theme-toggle-button';
 
@@ -90,6 +91,9 @@ const Navbar: React.FC<NavbarProps> = (props) => {
           <LinkItem href="/visitors" path={path}>
             Visitors
           </LinkItem>
+          <LinkItem href="https://github.com/badmaniacs/my-pf" path="">
+            <Flex>Source<Box mt="4px"><IoLogoGithub/></Box></Flex>
+          </LinkItem>
         </Stack>
         <Box display="flex" flex={1} justifyContent="right">
           <ThemeToggleButton />
@@ -103,13 +107,16 @@ const Navbar: React.FC<NavbarProps> = (props) => {
               />
               <MenuList>
                 <NextLink href="/" passHref>
-                  <MenuItem >About</MenuItem>
+                  <MenuItem>About</MenuItem>
                 </NextLink>
                 <NextLink href="/works" passHref>
-                  <MenuItem >Works</MenuItem>
+                  <MenuItem>Works</MenuItem>
                 </NextLink>
                 <NextLink href="/visitors" passHref>
-                  <MenuItem >Visitors</MenuItem>
+                  <MenuItem>Visitors</MenuItem>
+                </NextLink>
+                <NextLink href="">
+                  <MenuItem>Source</MenuItem>
                 </NextLink>
               </MenuList>
             </Menu>

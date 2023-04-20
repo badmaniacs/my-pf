@@ -37,7 +37,7 @@ const usePagenation = () => {
     setLoading(false);
   }, [key, data]);
 
-  const filteredDeleteData = useCallback((id:string) => {
+  const filteredDeleteData = useCallback((id: string) => {
     setLoading(true);
     setData((prevState) => prevState.filter((item) => item.id !== id));
   }, []);

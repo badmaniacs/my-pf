@@ -72,10 +72,10 @@ class FireBase {
   }
 
   async deleteComment(key: string) {
-    console.log(key)
-    const docRef = doc(this.db, `comments/${key}`,);
+    console.log(key);
+    const docRef = doc(this.db, `comments/${key}`);
     const res = await deleteDoc(docRef);
-    return res
+    return res;
   }
 }
 

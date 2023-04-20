@@ -36,7 +36,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     case 'DELETE':
       try {
         const { key } = query;
-        console.log(key)
+        console.log(key);
         const result = await database.deleteComment(key as string);
         return res.status(202).json(result);
       } catch (error) {
