@@ -66,7 +66,7 @@ const Work = () => {
           </ListItem>
           <ListItem>
             <Meta>SOURCE</Meta>
-            <Link  href="https://github.com/badmaniacs/pre-onboarding-8th-3-1">
+            <Link href="https://github.com/badmaniacs/pre-onboarding-8th-3-1">
               https://github.com/badmaniacs/pre-onboarding-8th-3-1{' '}
               <ExternalLinkIcon mx="2px" />
             </Link>

@@ -12,7 +12,9 @@ export const Title: React.FC<PropsWithChildren> = ({ children }) => {
   return (
     <Box>
       <NextLink href="/works">
-        <Link as="span" href="/works">Works</Link>
+        <Link as="span" href="/works">
+          Works
+        </Link>
       </NextLink>
       <span>
         &nbsp;

@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { Text, useColorModeValue } from '@chakra-ui/react';
 import styled from '@emotion/styled';
+import { HiOutlineHome } from 'react-icons/hi';
 
 const LogoBox = styled.span`
   font-weight: bold;
@@ -10,18 +10,17 @@ const LogoBox = styled.span`
   align-items: center;
   height: 30px;
   line-height: 20px;
-  padding: 10px;
-  &:hover img {
-    transform: rotate(20deg);
+  padding: 20px;
+  &:hover {
+    transform: scale(1.1);
   }
 `;
 
 const Logo = () => {
-  const thinkingImg = `/images/thinking.png`;
   return (
     <Link href="/">
       <LogoBox>
-        <Image src={thinkingImg} width={20} height={20} alt="logo" />
+        <HiOutlineHome />
         <Text
           color={useColorModeValue('gray.800', 'whiteAlpha.900')}
           fontFamily="Open Sans"

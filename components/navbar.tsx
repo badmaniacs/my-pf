@@ -25,7 +25,11 @@ interface LinkItemProps {
   path: string;
 }
 
-const LinkItem: React.FC<PropsWithChildren<LinkItemProps>> = ({ href, path, children }) => {
+const LinkItem: React.FC<PropsWithChildren<LinkItemProps>> = ({
+  href,
+  path,
+  children,
+}) => {
   const active = path === href;
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900');
 
@@ -99,13 +103,13 @@ const Navbar: React.FC<NavbarProps> = (props) => {
               />
               <MenuList>
                 <NextLink href="/" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
+                  <MenuItem >About</MenuItem>
                 </NextLink>
                 <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
+                  <MenuItem >Works</MenuItem>
                 </NextLink>
                 <NextLink href="/visitors" passHref>
-                  <MenuItem as={Link}>Visitors</MenuItem>
+                  <MenuItem >Visitors</MenuItem>
                 </NextLink>
               </MenuList>
             </Menu>
