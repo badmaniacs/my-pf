@@ -40,9 +40,9 @@ const Work = () => {
             </Link>
           </ListItem>
         </List>
-        <WorkImage src="/images/works/vcdex1.png" alt="VCDEX" />
-        <WorkImage src="/images/works/vcdex2.png" alt="VCDEX" />
-        <WorkImage src="/images/works/vcdex3.png" alt="VCDEX" />
+        <WorkImage src="/images/vcdex1.png" alt="VCDEX" />
+        <WorkImage src="/images/vcdex2.png" alt="VCDEX" />
+        <WorkImage src="/images/vcdex3.png" alt="VCDEX" />
       </Container>
     </Layout>
   );

@@ -1,9 +1,9 @@
 import { Container, Heading, SimpleGrid } from '@chakra-ui/react';
 import { WorkGridItem } from '@/components/grid-item';
 import Section from '@/components/section';
-import weallriding from '../public/images/Works/weallriding01.png';
-import vcdex from '../public/images/Works/vcdex2.png';
-import toy from '../public/images/Works/toy2.png';
+import weallriding from '../public/images/weallriding01.png';
+import vcdex from '../public/images/vcdex2.png';
+import toy from '../public/images/toy2.png';
 
 const Works = () => {
   return (

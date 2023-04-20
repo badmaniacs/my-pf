@@ -45,7 +45,7 @@ const Work = () => {
             </Link>
           </ListItem>
         </List>
-        <WorkImage src="/images/works/toy1.png" alt="toy1" />
+        <WorkImage src="/images/toy1.png" alt="toy1" />
         <Paragraph>
           전역 상태 관리 라이브러리만 사용하는 것이 개발 조건이었고 Recoil을
           채택해서 Form과의 데이터 통신, Modal 창 표시 여부, Drag & Drop을 전역
@@ -72,7 +72,7 @@ const Work = () => {
             </Link>
           </ListItem>
         </List>
-        <WorkImage src="/images/works/toy2.gif" alt="toy2" />
+        <WorkImage src="/images/toy2.gif" alt="toy2" />
         <Paragraph>
           캐싱 기능이 포함되지 않은 전역 상태 라이브러리 사용이 조건이었고,
           App의 규모가 작은 만큼 성능 문제가 나타나지 않을 거라 판단해, Context
@@ -103,7 +103,7 @@ const Work = () => {
             </Link>
           </ListItem>
         </List>
-        <WorkImage src="/images/works/toy3.png" alt="toy3" />
+        <WorkImage src="/images/toy3.png" alt="toy3" />
         <Paragraph>
           Redux의 비동기 처리를 위해 Redux ToolKit의 CreateAsyncThunk 함수를
           활용하였습니다. 전역 상태 관리를 통해 댓글 작성, 삭제 후 1페이지로

@@ -56,9 +56,10 @@ const Commentview: React.FC<CommentviewProps> = ({
             <Spacer />
             {deleteMode ? (
               <Box>
-                <Flex>
+
                   <FormControl isInvalid={isPasswordError}>
                     <form onSubmit={deleteHandler}>
+                    <Flex>
                       <Input
                         id="password"
                         name="password"
@@ -66,6 +67,7 @@ const Commentview: React.FC<CommentviewProps> = ({
                         size="xs"
                         placeholder="비밀번호"
                         maxLength={12}
+                        width="100px"
                       />
                       <Button size="xs" type="submit">
                         삭제
@@ -73,9 +75,9 @@ const Commentview: React.FC<CommentviewProps> = ({
                       <Button size="xs" onClick={deleteModeHandler}>
                         취소
                       </Button>
+                      </Flex>
                     </form>
                   </FormControl>
-                </Flex>
               </Box>
             ) : (
               <Box>
