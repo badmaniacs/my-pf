@@ -92,7 +92,12 @@ const Navbar: React.FC<NavbarProps> = (props) => {
             Visitors
           </LinkItem>
           <LinkItem href="https://github.com/badmaniacs/my-pf" path="">
-            <Flex>Source<Box mt="4px"><IoLogoGithub/></Box></Flex>
+            <Flex>
+              Source
+              <Box mt="4px">
+                <IoLogoGithub />
+              </Box>
+            </Flex>
           </LinkItem>
         </Stack>
         <Box display="flex" flex={1} justifyContent="right">
